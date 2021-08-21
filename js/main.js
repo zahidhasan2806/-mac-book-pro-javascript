@@ -69,5 +69,7 @@ promoBtn.addEventListener('click', function () {
         let percentageRate = parseFloat(total.innerText) * (20 / 100);
         discountTotal.innerText = parseFloat(total.innerText) - parseFloat(percentageRate);
         promoInput.value = "";
+    } else {
+        promoInput.value = '';
     }
 })
