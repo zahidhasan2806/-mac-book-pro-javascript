@@ -37,11 +37,11 @@ paidDelivery.addEventListener('click', function () {
 })
 
 
-const memoryExtraCost = document.getElementById("memory-cost").innerText;
-const storageExtraCost = document.getElementById("storage-cost").innerText;
-const deliveryExtraCost = document.getElementById("delivery-cost").innerText;
+const memoryExtraCost = document.getElementById("memory-cost");
+const storageExtraCost = document.getElementById("storage-cost");
+const deliveryExtraCost = document.getElementById("delivery-cost");
 const total = document.getElementById("extra-total-cost");
-const bestPrice = document.getElementById("best-price").innerText;
+const bestPrice = document.getElementById("best-price");
 
 const promoInput = document.getElementById("promo-input");
 const promoBtn = document.getElementById("button-promo");
@@ -59,7 +59,7 @@ function updateExtraCost(extraCost, value) {
 //updating total cost
 function updateTotalCost() {
 
-    total.innerText = parseInt(bestPrice) + parseInt(memoryExtraCost) + parseInt(storageExtraCost) + parseInt(deliveryExtraCost);
+    total.innerText = parseInt(bestPrice.innerText) + parseInt(memoryExtraCost.innerText) + parseInt(storageExtraCost.innerText) + parseInt(deliveryExtraCost.innerText);
     discountTotal.innerText = total.innerText;
 }
 
